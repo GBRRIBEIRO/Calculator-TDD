@@ -4,11 +4,6 @@ namespace Calculator_TDD_Tests
 {
     public class CalculatorTests
     {
-        private Calculator _calculator;
-        public CalculatorTests()
-        {
-            _calculator = new Calculator();
-        }
 
         [Theory]
         [InlineData(1,1,2)]
@@ -16,11 +11,13 @@ namespace Calculator_TDD_Tests
         public void Add(int value1, int value2, int result) 
         {
             //Arrange
+            Calculator _calculator = new Calculator();
 
             //Act
             var res =_calculator.Add(value1, value2);
             //Assert
             Assert.Equal(result, res);
+            Assert.Equal(_calculator.LastValues.Last(), res);
         }
 
         [Theory]
@@ -29,11 +26,13 @@ namespace Calculator_TDD_Tests
         public void Subtract(int value1, int value2, int result)
         {
             //Arrange
+            Calculator _calculator = new Calculator();
 
             //Act
             var res = _calculator.Subtract(value1, value2);
             //Assert
             Assert.Equal(result, res);
+            Assert.Equal(_calculator.LastValues.Last(), res);
         }
 
         [Theory]
@@ -42,11 +41,13 @@ namespace Calculator_TDD_Tests
         public void Multiply(int value1, int value2, int result)
         {
             //Arrange
+            Calculator _calculator = new Calculator();
 
             //Act
             var res = _calculator.Multiply(value1, value2);
             //Assert
             Assert.Equal(result, res);
+            Assert.Equal(_calculator.LastValues.Last(), res);
         }
 
 
@@ -56,10 +57,12 @@ namespace Calculator_TDD_Tests
         public void Divide(int value1, int value2, int result)
         {
             //Arrange
+            Calculator _calculator = new Calculator();
             //Act
             var res = _calculator.Divide(value1, value2);
             //Assert
             Assert.Equal(result, res);
+            Assert.Equal(_calculator.LastValues.Last(), res);
         }
 
         [Theory]
@@ -67,10 +70,28 @@ namespace Calculator_TDD_Tests
         public void DivideByZero(int value1, int value2)
         {
             //Arrange
+            Calculator _calculator = new Calculator();
             Func<dynamic> divideByZero = (() => _calculator.Divide(value1, value2));
             //Act
             //Assert
             Assert.Throws<DivideByZeroException>(divideByZero);
+        }
+
+        [Fact]
+        public void ChangeTheListAndAssertTheLastNumber()
+        {
+            //Arrange
+            Calculator _calculator = new Calculator();
+            var val1 = 1;
+            var val2 = 3;
+            //Act
+            _calculator.Add(val1, val2);
+            _calculator.Add(val1, val2);
+            _calculator.Add(val1, val2);
+            _calculator.Multiply(val1, val2);
+
+            //Assert
+            Assert.Equal(3, _calculator.LastValues.Last());
         }
     }
 }

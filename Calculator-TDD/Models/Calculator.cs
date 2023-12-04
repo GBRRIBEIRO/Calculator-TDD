@@ -11,10 +11,26 @@ namespace Calculator_TDD.Models
         public List<int> LastValues { get; set; } = new List<int>();
         public Calculator() { }
 
-        public int Add(int value1, int value2) { return value1 + value2; }
-        public int Subtract(int value1, int value2) { return value1 - value2; }
-        public int Multiply(int value1, int value2) { return value1 * value2; }
-        public int Divide(int value1, int value2) { return value1 / value2; }
+        public int Add(int value1, int value2) { 
+            var res = value1 + value2;
+            AddToLastValueArray(res);
+            return res;
+        }
+        public int Subtract(int value1, int value2) { 
+            var res = value1 - value2;
+            AddToLastValueArray(res);
+            return res;
+        }
+        public int Multiply(int value1, int value2) { 
+            var res = value1 * value2;
+            AddToLastValueArray(res);
+            return res;
+        }
+        public int Divide(int value1, int value2) { 
+            var res = value1 / value2;
+            AddToLastValueArray(res);
+            return res;
+        }
         private void AddToLastValueArray(int resultValue) 
         {
             if (LastValues.Count == 3) { LastValues.Remove(0); LastValues.Add(resultValue); }
