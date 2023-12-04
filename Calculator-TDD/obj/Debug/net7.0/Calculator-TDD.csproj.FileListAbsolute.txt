@@ -1,0 +1,14 @@
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\bin\Debug\net7.0\Calculator-TDD.exe
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\bin\Debug\net7.0\Calculator-TDD.deps.json
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\bin\Debug\net7.0\Calculator-TDD.runtimeconfig.json
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\bin\Debug\net7.0\Calculator-TDD.dll
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\bin\Debug\net7.0\Calculator-TDD.pdb
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\obj\Debug\net7.0\Calculator-TDD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\obj\Debug\net7.0\Calculator-TDD.AssemblyInfoInputs.cache
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\obj\Debug\net7.0\Calculator-TDD.AssemblyInfo.cs
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\obj\Debug\net7.0\Calculator-TDD.csproj.CoreCompileInputs.cache
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\obj\Debug\net7.0\Calculator-TDD.dll
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\obj\Debug\net7.0\refint\Calculator-TDD.dll
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\obj\Debug\net7.0\Calculator-TDD.pdb
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\obj\Debug\net7.0\Calculator-TDD.genruntimeconfig.cache
+C:\Dev\Projects\.NET\Calculator-TDD\Calculator-TDD\obj\Debug\net7.0\ref\Calculator-TDD.dll
