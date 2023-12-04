@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Calculator-TDD-Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8a07769bbfe795ef38d583917b5ac921f62d747")]
 [assembly: System.Reflection.AssemblyProductAttribute("Calculator-TDD-Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Calculator-TDD-Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

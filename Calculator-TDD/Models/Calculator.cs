@@ -8,13 +8,17 @@ namespace Calculator_TDD.Models
 {
     public class Calculator
     {
-        public int[] LastValues { get; set; } = new int[3];
+        public List<int> LastValues { get; set; } = new List<int>();
         public Calculator() { }
 
-        public int Add(int value1, int value2) { return 0; }
-        public int Subtract(int value1, int value2) { return 0; }
-        public int Multiply(int value1, int value2) { return 0; }
-        public int Divide(int value1, int value2) { return 0; }
-        private void AddToLastValueArray(int resultValue) { }
+        public int Add(int value1, int value2) { return value1 + value2; }
+        public int Subtract(int value1, int value2) { return value1 - value2; }
+        public int Multiply(int value1, int value2) { return value1 * value2; }
+        public int Divide(int value1, int value2) { return value1 / value2; }
+        private void AddToLastValueArray(int resultValue) 
+        {
+            if (LastValues.Count == 3) { LastValues.Remove(0); LastValues.Add(resultValue); }
+            else { LastValues.Add(resultValue);}
+        }
     }
 }
